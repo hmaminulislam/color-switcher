@@ -1,0 +1,51 @@
+.main {
+  position: relative;
+}
+.color-swither {
+  position: absolute;
+  left: -155px;
+  top: 200px;
+  display: flex;
+  transition: all 0.4s ease-in;
+}
+.swither-icon {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  animation: rotate 3s linear infinite;
+}
+.switcher-icon-wrapper {
+  background-color: #323232;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.color-swicher-active {
+  left: 0 !important;
+}
+.color-swither-wrapper {
+  background-color: #fff;
+  padding: 15px;
+}
+.select-color-title {
+  color: var(--main-color);
+  font-size: 16px;
+}
+.color-btn-group {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.color-btn {
+  width: 30px;
+  height: 30px;
+}
