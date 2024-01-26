@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../assets/hero.jpg');
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../src/assets/hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,8 +11,9 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    max-width: 850px;
+    max-width: 890px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 .sub-title {
     color: var(--main-color);
@@ -23,6 +24,7 @@
     font-size: 75px;
     font-weight: 700;
     color: #fff;
+    text-align: center;
 }
 .paragraph-medium {
     font-size: 18px;
@@ -61,5 +63,44 @@
 @keyframes downArrow {
     100% {
         transform: translateY(30px);
+    }
+}
+
+/* responsive */
+
+@media screen and (max-width: 990px) {
+    .type-text {
+        font-size: 58px;
+    }
+    .sub-title {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .type-text {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    .sub-title {
+        font-size: 24px;
+    }
+    .button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .type-text {
+        font-size: 40px;
+    }
+    .sub-title {
+        font-size: 22px;
+    }
+    .paragraph-medium {
+        font-size: 16px;
+    }
+    .button {
+        font-size: 15px;
     }
 }

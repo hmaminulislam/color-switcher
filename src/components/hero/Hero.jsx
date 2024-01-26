@@ -1,5 +1,5 @@
 import React from 'react';
-import './hero.css';
+import '../../style/hero.css';
 import Typed from 'typed.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandPointDown } from '@fortawesome/free-solid-svg-icons';

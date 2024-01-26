@@ -3,6 +3,8 @@ import Hero from "./components/hero/Hero"
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './App.css'
 import { useRef, useState } from "react";
+import Services from "./components/services/Services";
+import Gallery from "./components/gallery/Gallery";
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -46,6 +48,8 @@ function App() {
       </div>
       </div>
       <Hero/>
+      <Services />
+      <Gallery />
     </div>
   )
 }
